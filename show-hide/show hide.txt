@@ -1,0 +1,18 @@
+jQuery('#placeorder-mob').click(function(){
+                   jQuery("#solitaireplaceorder input[type='submit']").click();
+                });
+        function showdetails(id){
+            
+                if(jQuery("#details-"+id).is(':visible')){ 
+                    jQuery("#details-"+id).slideUp('slow'); 
+                    jQuery(".open").removeClass('open');
+                    jQuery(".details-"+id).text('OPEN');
+                }else{
+                    jQuery('.hide-text1').slideUp('slow');
+                    jQuery("#details-"+id).slideDown('slow');
+                    jQuery(".open").text('OPEN');
+                    jQuery(".open").removeClass('open');                    
+                    jQuery(".details-"+id).addClass('open');
+                    jQuery(".open").text('CLOSE');
+                }
+            }

@@ -1,0 +1,2 @@
+
+jQuery('#email').keyup(function(){ jQuery('#advice-required-entry-email').hide(); });

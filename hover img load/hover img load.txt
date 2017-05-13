@@ -1,0 +1,20 @@
+
+jQuery('.a-collection').hover(function(){
+  jQuery('#coll1 img').attr('src','/skin/frontend/zaamor/default/images/home/Vogue.jpg');
+ jQuery('#coll2 img').attr('src','/skin/frontend/zaamor/default/images/home/Unplugged_Urbane.jpg');
+  jQuery('#coll3 img').attr('src','/skin/frontend/zaamor/default/images/home/Sassy_Symmetry.jpg');
+   jQuery('#coll4 img').attr('src','/skin/frontend/zaamor/default/images/home/Manhatten_Classics.jpg');
+   jQuery('#coll5').attr('src','/skin/frontend/zaamor/default/images/home/lakshmi-pooja-menu.jpg');
+  });
+  
+  jQuery('.a-solitaire').hover(function(){
+	  jQuery('#soli1').attr('src','/skin/frontend/zaamor/default/images/home/Solitaire-menu.jpg');
+	  });
+	 
+	  jQuery('.a-readytoship').hover(function(){
+		 jQuery('#read1').attr('src','skin/frontend/zaamor/default/images/home/lakshmi-pooja-menu.jpg'); 
+	  });
+
+	   jQuery('.a-coin').hover(function(){
+		 jQuery('#coi1').attr('src','/skin/frontend/zaamor/default/images/home/lakshmi-pooja-menu.jpg'); 
+	  });
