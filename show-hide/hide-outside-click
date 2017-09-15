@@ -1,0 +1,72 @@
+<html>
+
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+      <script type = "text/javascript" language = "javascript">
+         $(document).click(function(e) {   
+    if(e.target.id != 'close') {
+        $(".hide-text1").hide();
+jQuery(".open").removeClass('close');		
+    } 
+});
+        function showdetails(id){
+            
+                if(jQuery("#details-"+id).is(':visible')){ 
+                    jQuery("#details-"+id).slideUp('slow'); 
+                    jQuery(".open").removeClass('open');
+                    jQuery(".details-"+id).text('OPEN');
+                }else{
+                    jQuery('.hide-text1').slideUp('slow');
+                    jQuery("#details-"+id).slideDown('slow');
+                    jQuery(".open").text('OPEN');
+                    jQuery(".open").removeClass('open');                    
+                    jQuery(".details-"+id).addClass('open');
+                    jQuery(".open").text('CLOSE');
+                }
+            }
+
+      </script>
+   </head>
+	
+   <body>
+      <div id="tabledatas" class="table-responsive r-table"> 
+	  <table class="tblcontent1"><tbody>
+                                <tr style="height:13px;">
+                                
+                                <td><a class="close1 details-49055" id="close" onclick="showdetails(188844)">OPEN</a></td>
+                        </tr></tbody></table>
+                            <div class="hide-text1" id="details-188844" style="display: none;">
+							<p>.xzncmn</p>
+                            </div>  <table class="tblcontent1"><tbody>
+                                <tr style="height:13px;">
+                                
+                                <td><a class="close1 details-49065" id="close" onclick="showdetails(49065)">OPEN</a></td>
+                        </tr></tbody></table>
+                            <div class="hide-text1" id="details-49065" style="display: none;">
+							<p>.xzncmn</p>
+                            </div>  <table class="tblcontent1"><tbody>
+                                <tr style="height:13px;">
+                                
+                                <td><a class="close1 details-49066" id="close" onclick="showdetails(49066)">OPEN</a></td>
+                        </tr></tbody></table>
+                            <div class="hide-text1" id="details-49066" style="display: none;">
+							<p>.xzncmn</p>
+                            </div>  <table class="tblcontent1"><tbody>
+                                <tr style="height:13px;">
+                                
+                                <td><a class="close1 details-188842" id="close" onclick="showdetails(188842)">OPEN</a></td>
+                        </tr></tbody></table>
+                            <div class="hide-text1" id="details-188842" style="display: none;">
+							<p>.xzncmn</p>
+                            </div>  
+                              
+                             
+                             
+                              
+                            </div>
+   </body>
+	
+</html>
