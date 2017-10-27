@@ -65,4 +65,21 @@
                             </div>
    </body>
 	
-</html>
+</html>    $('.full-partners-tbody').on('click', '.tbody-partners', function (e) {
+     $(e.currentTarget).closest('.partners-tbody').next().toggle();
+     console.log(e.currentTarget);
+   })
+
+<script type="text/javascript">
+ $(document).ready(function(){
+
+   $('.full-partners-tbody').on('click', '.tbody-partners', function (e) {
+     $(this).parents('div').find('.details-wrap').toggle();
+   })
+
+ });
+</script>
+
+
+
+
