@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+div.panel { display:none; }
+div.panel.active { display:block; }
+</style>
+</head>
+<body>
+
+<a href='#' class='link'>link 1</a>
+<div id='#div1' class='panel active'> Visible </div>
+<br />
+<a href='#' class='link'>link 2</a>
+<div id='#div1' class='panel'> Visible </div>
+<br />
+<a href='#' class='link'>link 3</a>
+<div id='#div1' class='panel'> Visible </div>
+
+
+<script>
+$(function()   {
+    $(".link").click(function(e) {
+        e.preventDefault();
+        $('div.panel:visible').hide();
+        $(this).next('div.panel').show();
+    });
+});
+</script>
+</body>
+</html>
